@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: work Sans;
+            font-size: 1em;
+            /*medidas absolutas
+            cm, mm, in(polegada), px, pt, pc
+
+            medidas relativas
+            em, ex, rem, vp, vh, %
+            */
+        }
+        /*shorthand
+            ordem: font-style, font-weight, font-size, font-family
+            font-family: Arial;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            Tudo isso pode ser substituido pelo codigo abaixo
+            */
+        h1{
+            font: italic bolder 3em Arial;
+            background-color: #e9e9e9;
+            height: 34px;
+            width: 560px;
+            
+            /*shorthand border-width: 3px;
+            border-style: solid;
+            border-color: darkgray;*/
+            border: 3px solid darkgray;
+
+            /*shorthand padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;*/
+            padding: 10px;
+
+            /*margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;*/
+            margin: 20px auto 40px auto;
+
+            /*outline-width: 5px;
+            outline-style: dashed;
+            outline-color: royalblue;*/
+            outline: 5px dashed royalblue;
+        }
+        h2{
+            font: bold 2em Arial;
+            
+        }
+        a{
+            display: inline;
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            
+        }
+    </style>
+</head>
+<body >
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum consequatur aliquid modi dicta quia, animi iusto? Recusandae voluptates possimus temporibus dicta at commodi, ab eligendi repudiandae blanditiis tenetur et inventore.</p>
+    <h2>subtitulo do exercicio</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi itaque quisquam repudiandae non dolorem, velit pariatur earum. Provident aut autem cum, quod fuga quaerat ipsam libero aliquam, sed doloremque nisi <a href="#">Testando bordas</a>.</p>
+    
+</body>
+</html>
