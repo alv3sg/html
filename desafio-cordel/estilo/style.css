@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+body {
+    height: 98vh;
+    margin: 0px;
+}
+header {
+    height: 26vh;
+    position: relative;          
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+div#cabeca{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+header a {
+    font-weight: bolder;
+    color: white;
+}
+article {
+    background-color: white;
+    height: 96vh;
+    position: relative;
+}
+article.bloco {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right center;
+    width: 100%;
+    height: 74vh;
+}
+article.bloco p {            
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 30%;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+article#primeiro {
+    background-image: url('../imagens/background001.jpg');
+}
+article#segundo {
+    background-image: url('../imagens/background002.jpg');
+}
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+footer a {
+    color: white;
+    font-weight: bolder;
+}
