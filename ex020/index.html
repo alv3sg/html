@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso do Form</title>
+</head>
+<body>
+    <form action="envia-dados.php" method="post"  enctype="multipart/form-data"> <!--Enviar dados para pag php. Metodo Post. Para enviar imagens -->
+        <p>
+            Nome: <input type="text" name="nome" id=""> <!--Tipo de entrada texto-->
+            Sobrenome: <input type="text" name="sobrenome" id="">
+        </p>
+        <fieldset> <!--Agrupar informações-->
+            <legend>desenvolvimento</legend> <!--Nome na linha-->
+            <p>
+                <label for="HTML"> <!--Selecionar ao clicar no nome-->
+                    <input type="radio" name="opcoes" id="HTML"> HTML
+                </label> <!--Selecionar apenas um-->
+                <label for="CSS">
+                    <input type="radio" name="opcoes" id="CSS"> CSS
+                </label>
+            </p>
+            <p>
+                <input type="checkbox" name="tecnology" id="HTML">Eu sei HTml <!--Selecioanr mais de um-->
+                <input type="checkbox" name="tecnology" id="CSS">Eu sei CSS
+            </p>
+            <p>
+                <select name="" id=""> <!--Opções para selecionar-->
+                    <option value="" selected>Selecione uma opção:</option> <!--Selected a primeira opção-->
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                </select>
+
+                <select name="" id=""> 
+                    <option value="" selected>Selecione uma opção:</option> 
+                
+                    <optgroup label="Desenvolvimento"> <!--Separar as opções por grupo-->
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                    </optgroup>
+                    <optgroup label="Programaçãp">
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                Mensagem <br>
+                <textarea name="msg" id="" cols="30" rows="10"></textarea> <!--Adicionar campo para mensagem. Linhas e colunas-->
+            </p>
+            <input type="reset" name="limpar" id="LIMPAR"> <!--Limpar todo o formulario-->
+            <input type="submit" name="enviar" id="ENVIAR"> <!--Enviar o formulario-->
+        </fieldset>
+    </form>
+    <table cellpadding="5" cellspacing="5" border="1"> <!--Criar tabela. Epaço entre o nome e a borda. Espaço entre as colunas. E a borda-->
+        <tr> <!--Linhas-->
+            <th>Nome</th> <!--Cabeçalhos-->
+            <th>Telefone</th>
+            <th>Endereço</th>
+        </tr>
+        <tr>
+            <th>Gabriel</th>
+            <th>927383060</th>
+            <th>Rua blabal</th>
+        </tr>
+        <tr>
+            <th>sara</th>
+            <th>927383030</th>
+            <th>Rua blabal</th>
+        </tr>
+        <tr>
+            <th colspan="2">Telefones</th> <!--Uma linha ocupar duas colunas-->
+        </tr>
+        <tr>
+            <td>68499895168</td>
+            <td>415162252</td>
+        </tr>
+        <tr>
+            <th rowspan="4">Telefones</th> <!--Uma linha mesclar duas linhas-->
+        </tr>
+        <tr>
+            <td>68499895168</td>
+            <td>415162252</td>
+        </tr>
+        <tr>
+            <td>68499895168</td>
+            <td>415162252</td>
+        </tr>
+
+    </table>
+</body>
+</html>

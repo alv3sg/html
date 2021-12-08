@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica</title>
+</head>
+<body style="font-size: 20px;">
+    <h1>tabela layout</h1>
+    <table cellspacing="10" cellpadding="10" border="1">
+        <header>
+            <tr> <!--Primeira linha-->
+                <th colspan="2">Este é o cabecalho</th> <!--Coluna 1-->
+            </tr>
+        </header>
+        <main>
+            <tr> <!--Segunda linha-->
+                <td width="200px"> <!--Coluna 1-->
+                    <table cellspacing="5" cellpadding="5"> <!--Tabela-->
+                        <tr><!--Primeira linha-->
+                            <th>Menu</th>
+                        </tr>
+                        <tr><!--Segunda linha-->
+                            <td><a href="#">Home</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#"> Sobre a empresa</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Contato</a></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Espaço para conteudo do site</td> <!--Coluna 2-->
+            </tr>
+            <tr> <!--Terceria linha-->
+                <td colspan="2">
+                    <table cellspacing="5" cellpadding="5" width="100%">
+                        <tr>
+                            <td style="text-align: center; width: 25%;">HTML</td>
+                            <td style="text-align: center; width: 25%;">CSS</td>
+                            <td style="text-align: center; width: 25%;">JAVA</td>
+                            <td style="text-align: center; width: 25%;">PHP</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </main>
+        <footer>
+            <tr> <!--Quarta linha-->
+                <td colspan="2" style="text-align: center;">
+                    Esté é o rodape do site
+                </td>
+            </tr>
+        </footer>
+    </table>
+</body>
+</html>
